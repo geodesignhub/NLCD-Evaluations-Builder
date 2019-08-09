@@ -66,7 +66,6 @@ class DataDownloader():
 			basename= os.path.basename(name)
 			filename, file_extension = os.path.splitext(basename)
 			if file_extension == '.shp' and 'MACOSX' not in name:
-
 				shapefilelist.append(name)
 			z.extract(name, workingdirectory)
 		fh.close()

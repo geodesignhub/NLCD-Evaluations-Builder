@@ -1,10 +1,10 @@
 settings = {
 
-    "aoifile": "https://gdh-data.ams3.digitaloceanspaces.com/boundaries/Jekyll-Island.geojson",
-    "systems": ["URB", "IND", "FOR", "HYDRO","AG"],
+    "aoifile": "minn-sa.geojson",
+    "systems": ["URB","AG","IND","FOR","HYDRO","EI","LDH","MIX"],
     "outputdirectory": "output",
     "workingdirectory": "working",
-    "nlcddata": "NLCD.zip",
+    "nlcddata": "working.zip",
 }
 
 
@@ -41,8 +41,21 @@ processchains = {
         "red": [11,12,41,42,43],
         "yellow": [11,12,23,24],
         "green": [21,22,31,51,52,71,72,73,74,81,90,95] 
+    },
+        
+    "EI": {
+        "red": [],
+        "yellow": [11,12,23,42,43,41,31,81,82,90,95,24,51,52,71,72,73,74],
+        "green": [21,22]
+    },
+    "LDH": {
+        "red": [22],
+        "yellow": [41,42,43,31,11,12,23,24,73,74,90,95,82],
+        "green": [51,71,72,82,52,81,90,95]
+    },
+    "MIX": {
+        "red": [23],
+        "yellow": [11,12,42,73,74,81,82,90,95],
+        "green": [21,22,24,31,41,43,51,52,71,72,]
     }
-    
-    
-
 }

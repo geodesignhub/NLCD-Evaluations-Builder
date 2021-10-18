@@ -1,7 +1,7 @@
 settings = {
 
     "aoifile": "minn-sa.geojson",
-    "systems": ["URB","AG","IND","FOR","HYDRO","EI","LDH","MIX"],
+    "systems": ["URB","AG","IND","FOR","HYDRO","EI","GI","LDH","MIX"],
     "outputdirectory": "output",
     "workingdirectory": "working",
     "nlcddata": "working.zip",
